@@ -99,8 +99,8 @@ const RUNTIME_KEYS = new Set(API_KEYS);
 // 上次密钥切换时间
 let lastKeyRotationTime = Date.now();
 
-// 密钥轮询间隔（毫秒），默认为每分钟切换一次
-const KEY_ROTATION_INTERVAL = 60 * 1000; // 60秒
+// 密钥轮询间隔（毫秒），修改为每10秒切换一次
+const KEY_ROTATION_INTERVAL = 10 * 1000; // 10秒
 
 // 获取下一个密钥的函数
 function getNextApiKey(providedKey, forceRotate = false) {
